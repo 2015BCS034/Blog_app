@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+  <strong>Comments text:</strong>
+  <%= @comment.comments_text %>
+</div>
+
+<div class="container">
+  <strong>Authorname:</strong>
+  <%= @comment.authorname %>
+</div>
+
+<div class="container">
+<%= link_to 'Edit', edit_comment_path(@comment) %> |
+<%= link_to 'Back', comments_path %>
+<div>
